@@ -16,7 +16,7 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          DOCKER_IMAGE=archivy
+          DOCKER_IMAGE=${{ github.actor }}/archivy
           VERSION=latest
           SHORTREF=${GITHUB_SHA::8}
 
@@ -40,7 +40,7 @@ jobs:
       - name: Prepare slim
         id: prepslim
         run: |
-          DOCKER_IMAGE=archivy
+          DOCKER_IMAGE=${{ github.actor }}/archivy
           VERSION=latest-slim
           SHORTREF=${GITHUB_SHA::8}
 
