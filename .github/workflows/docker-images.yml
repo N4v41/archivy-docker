@@ -88,7 +88,7 @@ jobs:
           push: true
           tags: ${{ steps.prep.outputs.tags }}
           build-args: |
-            VERSION=1.7.0
+            VERSION=1.7.2
       
       - name: Build Build latest-slim image with ripgrep
         uses: docker/build-push-action@v2
@@ -100,4 +100,4 @@ jobs:
           push: true
           tags: ${{ steps.prepslim.outputs.tags }}
           build-args: |
-            VERSION=1.7.0
+            VERSION=1.7.2
